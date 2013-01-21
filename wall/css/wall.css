@@ -1,0 +1,389 @@
+/* 
+Srinivas Tamada
+www.9lessons.info 
+Facebook Wall Script
+*/
+
+*
+{
+margin:0px;
+padding:0px;
+}
+body
+{
+font-family:Arial, Helvetica, sans-serif;
+font-family:12px;
+}
+h3,h4
+{
+padding:0px;
+margin:0px;
+}
+a
+{
+color:#006699;
+text-decoration:none;
+}
+#wall_container
+{
+
+}
+#update
+{
+width:550px;font-size:12px;
+}
+#content
+{
+margin-top: 10px;
+width: 646PX;
+}
+textarea
+{
+border:solid 1px #333;
+}
+
+/* status body */
+
+li .stbody{}
+
+.stbody {
+position:relative;
+float: right;
+margin-bottom: 10px;
+overflow: HIDDEN;
+width: 206px;
+padding: 0 0 0 6px;
+margin: 5px 0px 0px 0px;
+min-height: 364PX;
+}
+
+.shop-data {
+margin: -16px 19px 0 0;
+width: 66px;
+height: 34px;
+float: right;
+position: relative;	
+}
+
+.view-shop-data{
+font-size: 16px;
+width: 85px;
+margin: 4px -7px;
+color: white;}
+
+.mycupon {
+position:absolute;
+bottom:3px;
+}
+
+.stimg
+{
+float: right;
+height:50px;
+width:50px;
+border:solid 1px #dedede;
+padding:3px;
+}
+.sttext
+{
+position: relative;
+margin-left:70px;
+min-height:50px;
+word-wrap:break-word;
+overflow:hidden;
+padding:5px;
+display:block;
+font-size:12px;
+width:470px;
+		border-radius: 6px;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border: 2px solid rgba(156, 156, 156, 0.2);
+		background-color: #DFDDD5;
+}
+.Triangle{
+position: relative;
+margin-left:70px;
+min-height:50px;
+}
+
+.sttext b
+{
+color:#006699;
+}
+
+.sttime
+{
+
+right: 0px;
+font-size:11px;
+color:#999;
+font-family:Arial, Helvetica, sans-serif;
+margin-top:5px;
+padding:5px;
+}
+.stdelete 
+{
+font-weight:bold;
+float:right;
+cursor:pointer;
+}
+#stexpandbox
+{
+margin-top:10px;
+}
+#stexpandbox img
+{
+border:solid 1px #dedede;
+padding:3px;
+}
+/* Comment */
+.stcommentbody
+{
+
+
+border-bottom:solid 1px #fff;
+background-color:#f2f2f2;
+padding:5px;
+width:400px;
+float: right;
+overflow:hidden;
+}
+.stcommentimg
+{
+float:left;
+height:35px;
+width:35px;
+border:solid 1px #dedede;
+padding:2px;
+}
+.stcommenttext
+{
+margin-left:0px;
+min-height:40px;
+word-wrap:break-word;
+overflow:hidden;
+padding:3px;
+display:block;
+font-size:11px;
+width:350px;
+
+}
+.stcommenttext b
+{
+color:#006699;
+}
+
+.stcommenttime
+{
+font-size:11px;
+color:#999;
+font-family:Arial, Helvetica, sans-serif;
+margin-top:5px;
+}
+.stcommentdelete 
+{
+font-weight:bold;
+float:right;
+cursor:pointer;
+}
+.commentupdate
+{
+background-color:#f2f2f2;
+width:400px;
+padding:5px;
+}
+.comment
+{
+width:330px;
+height:35px;
+font-size:11px;
+}
+/* faceb image*/
+.small_face
+{
+width:35px;height:35px
+}
+.big_face
+{
+margin: 0px 6px;
+width:50px;height:50px
+}
+
+.bizlogo
+{
+width:203px;height:50px;
+overflow:hidden;
+-moz-border-radius-topright: 20px;
+border-top-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+border-top-left-radius: 20px;
+
+}
+
+.buyer-image{float:right;}
+.shop-title{float: right;
+background: url(../../img/bubble.png) no-repeat;
+width: 134px;
+background-size: 139px 50px;
+height: 52px;
+}
+
+.shop-image{
+position: relative;
+width: 189px;
+padding: 10px 0 0 0;
+height: 88px;
+margin: 0px 7px;
+height: 130px;
+overflow: hidden;
+border-radius: 6px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+background: white;
+box-shadow:inset 0 0 10px #000000;
+-moz-box-shadow:inset 0 0 10px #000000;
+}
+
+.status{float:right;margin: 16px 10px;}
+
+.shop-photo{
+width: 150px;
+height: 120px;
+overflow: hidden;
+position: absolute;
+right: 20px;
+}
+
+.title-text {
+font-family: 'Gisha', Arial, sans-serif;
+margin: 4px 21px 0 0;
+width: 108px;
+font-size: 14px;
+line-height: 14px;
+font-weight: bold;
+color: blue;
+height: 43px;
+float: right;
+word-wrap: break-word;
+text-align: right;
+overflow: hidden;
+  opacity:1;
+  filter:alpha(opacity=100);
+}
+
+.star-rating{float:left;margin: 4px 0px 0 5px;}
+.likes{float:right;margin: 3px;}
+
+#flashmessage
+{
+height:15px;
+
+font-size:11px;
+color:#333;
+
+}
+
+.brand{
+}
+
+.barnd-logo{
+float:right;
+}
+
+.barnd-logo img{
+width:100px;
+height:100px;
+padding: 15px 5px;
+}
+
+.buy-details{
+float: right;
+text-align: right;
+}
+.buy-title{
+text-align: right;
+font-size: 20px;
+padding: 10px 10px 5px 0;
+}
+.buy-description{
+text-align: right;
+font-size: 12px;
+padding: 0px 10px 0px 0;
+}
+
+.buytoo{
+float:left;
+}
+
+.buy-image{
+
+}
+
+.buy-image img{
+width:80px;
+height:80px;
+}
+
+.buy-buttons{
+width:80px
+}
+.buy-buttons img{
+width:80px
+}
+.buy-buttons li{
+list-style-type:none;
+}
+
+.recommand{
+text-align:right;
+}
+
+.clearfix{ clear:both; }
+
+
+
+/* CSS: */
+
+.bubble {
+    background-color: #c0c0bf;
+    background-image: -webkit-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:    -moz-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:     -ms-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:      -o-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:         linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.5),
+                3px 3px 0 hsla(0,0%,0%,.1);
+    color: #333;
+    display: inline-block;
+    font: 16px/25px sans-serif;
+    width: 200px;
+	height: 350px;
+    position: relative;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.5);
+	-moz-border-radius-topright: 20px;
+border-top-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+border-top-left-radius: 20px;
+
+}
+/* .bubble:after, .bubble:before {
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #fff0a0;
+    bottom: -25px;
+    content: '';
+    position: absolute;
+    right: 25px;
+}
+.bubble:before {
+    border-right: 25px solid hsla(0,0%,0%,.1);
+    bottom: -28px;
+    right: 22px;
+} */
+
+.headline{
+}
+
+
+

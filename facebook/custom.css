@@ -1,0 +1,27 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    background:#EEEEEE;
+    background-image: url('images/lwsback.png');
+    background-repeat: repeat-x;
+    background-position: center;
+    
+}
+html,body
+{
+    height: 100%;
+}
+.container
+{
+    width: 1000px;
+    background:white;
+    height: 100%;
+    border-top: none;
+    height: 1000px;
+    margin: auto;
+    
+}
+
+ 
