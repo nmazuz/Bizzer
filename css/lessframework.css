@@ -129,6 +129,10 @@ px      68    160    252    344    436    528    620    712    */
 		display: none;
 	}
 	
+	#imglogo{
+	margin: 0px 24px;
+	}
+	
 	/* widget cols */
 	
 	.widget-cols>li{
@@ -232,6 +236,7 @@ px      68    160    252    */
 		#imglogo{
 	width:200px;
 	position: absolute;
+	left: 4px;
 	}	
 	
 	.wrapper {

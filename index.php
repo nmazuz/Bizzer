@@ -144,8 +144,33 @@ $actual_row_count = $row_object->rowcount;
 			});
 		</script>
 		
+<script type="text/javascript">
+$(document).ready(function(){
+$('.bt-top').click(function() { 
+	$('.bt-top').each(function() {
+
+		$(this).attr("src","img/bt.png");
+	});
+	var id = $(this).attr("id");
+	var src = "img/" + id + "-bt.png";
+	$('#'+id).attr("src", src);
+});
+	/* $(function() {
+		$("img.bt")
+		.mouseover(function() { 
+		var src = $(this).attr("src").match(/[^\.]+/) + "over.gif";
+		$(this).attr("src", src);
+		})
+		.mouseout(function() {
+		var src = $(this).attr("src").replace("over.gif", ".gif");
+		$(this).attr("src", src);
+		});
+	}); */
+	});
+</script>
+		
 			<script type="text/javascript">
-		$(document).ready(function(){	
+			
 			$("#slider").easySlider({
 				auto: true,
 				continuous: true,
@@ -587,8 +612,10 @@ $actual_row_count = $row_object->rowcount;
 			<div class="info_box">
 				<div class="infobox-container"> 
 					<div class="triangle-l"></div>
-						<div class="infobox big"> 
-							<h3><span>עסקים משתתפים</span></h3> 		
+						<div class="infobox big" style="height:300px">  
+							<h3><span>עסקים מובילים</span></h3> 
+							<div class="contant-box">
+							</div>										
 						</div> 
 				</div>
 			</div>	
@@ -596,15 +623,24 @@ $actual_row_count = $row_object->rowcount;
 			<div class="info_box">
 				<div class="infobox-container"> 
 					<div class="triangle-l"></div>
-						<div class="infobox big" style="height:300px"> 
-							<h3><span>בזבזנים</span></h3> 
+						<div class="infobox big" style="height:284px"> 
+							<h3><span>המבזבזים המובילים</span></h3> 
 							<div class="top-buttons">
-							<a href="#" class="bt"><img src="img/bt-left-ck.png" alt="Post" /></a>
-							<a href="#" class="bt"><img src="img/bt.png" alt="Post" /></a>
-							<a href="#" class="bt"><img src="img/bt.png" alt="Post" /></a>
+							<img src="img/bt.png" alt="Post" id="l-list"  class="bt-top"/>
+							<img src="img/bt.png" alt="Post" id="c-list"  class="bt-top"/>
+							<img src="img/bt.png" alt="Post" id="r-list"  class="bt-top"/>
 
 							</div>	
-							<div class="contant-box">ewrewr</div>			
+							<div class="contant-box">
+							<ul>
+							<li class="box-row"><div class="line-contant"><img src="https://graph.facebook.com/1130160922/picture" width="50" height="50" /></div></li>
+							<li class="box-row"><div class="line-contant"><img src="https://graph.facebook.com/1130160922/picture" width="50" height="50" /></div></li>
+							<li class="box-row"><div class="line-contant"><img src="https://graph.facebook.com/1130160922/picture" width="50" height="50" /></div></li>
+							<li class="box-row"><div class="line-contant"><img src="https://graph.facebook.com/1130160922/picture" width="50" height="50" /></div></li>
+							<li class="box-row"><div class="line-contant"><img src="https://graph.facebook.com/1130160922/picture" width="50" height="50" /></div></li>
+							<li class="box-row"><div class="line-contant"><img src="https://graph.facebook.com/1130160922/picture" width="50" height="50" /></div></li>
+							</ul>
+							</div>			
 						</div> 
 				</div>
 			</div>	
